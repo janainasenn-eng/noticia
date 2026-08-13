@@ -1,69 +1,257 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Homem-Aranha: Um Novo Dia</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Homem-Aranha | GISE NEWS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-<div class="escola">
-<strong>Colégio Estadual Frederico Guilherme Gise</strong>
-<span>Educação Digital</span>
-</div>
-</header>
+    <div class="barra-progresso" id="barraProgresso"></div>
 
-<main class="noticia">
+    <header class="topo">
 
-<p class="categoria">CINEMA • MARVEL</p>
+        <div class="container topo-interno">
 
-<h1>
-Homem-Aranha: Um Novo Dia chega aos cinemas e conquista os fãs em 2026
-</h1>
+            <div class="marca">
+                <div class="simbolo">✦</div>
+                <div>
+                    <span class="marca-principal">GISE</span>
+                    <span class="marca-sub">NEWS</span>
+                </div>
+            </div>
 
-<p class="subtitulo">
-Novo filme traz Peter Parker em uma fase mais madura, intensa e cheia de desafio
-</p>
+            <div class="informacao-escola">
+                <strong>Colégio Estadual Frederico Guilherme Giese</strong>
+                <span>Educação Digital</span>
+            </div>
 
-<div class="informacoes">
-<span>Por <strong>Janaína Sen</strong></span>
-<span>Publicado em 12/08/2026</span>
-</div>
+            <div class="data-topo">
+                12 AGO<br>
+                <span>2026</span>
+            </div>
 
-<img
-src="img/homem-aranha.jpg"
-alt="Imagem ilustrativa do Homem-Aranha"
-class="imagem-noticia"
->
+        </div>
 
-<p class="legenda">
-Homem-Aranha retorna em uma nova aventura nos cinemas em 2026.
-</p>
+    </header>
 
-<article id="conteudo">
-<p>
-O Homem-Aranha está de volta aos cinemas em uma nova aventura que coloca Peter Parker diante de uma fase diferente de sua vida. Em Homem-Aranha: Um Novo Dia, Tom Holland retorna ao papel do herói em uma história que mostra Peter vivendo de forma mais solitária após os acontecimentos de Sem Volta para Casa. O novo capítulo apresenta uma Nova York marcada pelo crime e por uma ameaça misteriosa, enquanto o protagonista tenta proteger a cidade sem deixar de enfrentar os próprios conflitos.
-</p>
 
-<p>
-A produção é dirigida por Destin Daniel Cretton e reúne nomes conhecidos do universo do herói. Zendaya retorna como MJ, Jacob Batalon volta como Ned e Jon Bernthal aparece como Frank Castle, o Justiceiro. Mark Ruffalo também participa como Bruce Banner, aumentando a expectativa dos fãs sobre a dimensão da nova história.
-</p>
+    <main>
 
-<p>
-O filme chegou aos cinemas brasileiros em 29 de julho de 2026 e rapidamente chamou atenção do público. Segundo dados divulgados nesta semana, a produção já ultrapassou US$ 1,8 bilhão em bilheteria mundial, tornando-se um dos maiores sucessos do ano. A aventura também reforça uma nova etapa para Peter Parker, que enfrenta novos perigos e precisa aprender a seguir em frente!
-</p>
-</article>
+        <section class="hero">
 
-</main>
+            <div class="hero-fundo"></div>
 
-<footer>
-<p>Colégio Estadual Frederico Guilherme Gise • Educação Digital</p>
-<p>Janaína Sen • 12/08/2026</p>
-</footer>
+            <div class="teia teia-1"></div>
+            <div class="teia teia-2"></div>
 
-<script src="script.js"></script>
+            <div class="container hero-conteudo">
+
+                <div class="etiqueta">
+                    <span class="ponto"></span>
+                    CINEMA
+                    <b>•</b>
+                    MARVEL
+                </div>
+
+                <h1>
+                    Homem-Aranha: Um Novo Dia chega aos cinemas e conquista fãs neste ano!
+                </h1>
+
+                <p class="subtitulo">
+                    Peter Parker retorna em uma aventura intensa, visual grandioso e novos desafios!
+                </p>
+
+                <button class="botao" id="botaoLer">
+                    LER A NOTÍCIA
+                    <span>↓</span>
+                </button>
+
+                <div class="assinatura">
+
+                    <div class="autor">
+                        <div class="avatar">JS</div>
+
+                        <div>
+                            <span>POR</span>
+                            <strong>Janaina Senn</strong>
+                        </div>
+                    </div>
+
+                    <div class="separador"></div>
+
+                    <div>
+                        <span>PUBLICADO EM</span>
+                        <strong>12/08/2026</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="foto-section" id="noticia">
+
+            <div class="container">
+
+                <div class="foto-moldura">
+
+                    <div class="tag-foto">
+                        GISE NEWS
+                    </div>
+
+                    <img
+                        src="img/homem-aranha.jpg"
+                        alt="Imagem ilustrativa do Homem-Aranha"
+                    >
+
+                    <div class="numero-foto">
+                        01
+                    </div>
+
+                </div>
+
+                <p class="legenda">
+                    Homem-Aranha retorna em uma nova aventura cheia de ação e desafios.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="conteudo-section">
+
+            <div class="container conteudo-grid">
+
+                <article class="materia" id="materia">
+
+                    <div class="abertura">
+                        <span class="linha"></span>
+                        <span>EM DESTAQUE</span>
+                    </div>
+
+                    <p>O universo do Homem-Aranha ganha um novo capítulo em 2026 com a chegada de Homem-Aranha: Um Novo Dia. A história acompanha Peter Parker em uma fase mais madura, depois de enfrentar acontecimentos que transformaram sua vida. Agora, tentando reconstruir sua rotina, o herói precisa lidar com novos perigos enquanto protege Nova York de uma ameaça que cresce nas sombras.</p><p>Com cenas de ação, suspense e momentos emocionantes, a produção apresenta um Peter mais determinado, mas também mais consciente do peso de suas escolhas. Entre perseguições, batalhas e descobertas, ele percebe que ser um herói não significa apenas enfrentar vilões, mas também assumir responsabilidades e encontrar forças para continuar quando tudo parece difícil.</p><p>O filme também amplia o universo do personagem e abre espaço para novas possibilidades. Personagens conhecidos retornam, enquanto rostos inéditos movimentam a história e aumentam a expectativa do público. A direção aposta em sequências grandiosas, efeitos visuais marcantes e uma narrativa que mistura aventura com emoção, mantendo a essência do herói que conquistou gerações.</p><p>Para os fãs, esta aventura representa uma nova fase para Peter Parker, com desafios maiores.</p>
+
+                </article>
+
+
+                <aside class="lateral">
+
+                    <div class="card-destaque">
+
+                        <div class="aranha-icon">✦</div>
+
+                        <span class="card-label">
+                            ESPECIAL CINEMA
+                        </span>
+
+                        <h2>
+                            Um novo capítulo começa.
+                        </h2>
+
+                        <div class="linha-vermelha"></div>
+
+                        <p>
+                            Uma notícia produzida para a disciplina
+                            Educação Digital.
+                        </p>
+
+                    </div>
+
+
+                    <div class="ficha">
+
+                        <span class="ficha-titulo">
+                            FICHA DA PUBLICAÇÃO
+                        </span>
+
+                        <div class="ficha-item">
+                            <small>AUTORA</small>
+                            <strong>Janaina Senn</strong>
+                        </div>
+
+                        <div class="ficha-item">
+                            <small>DISCIPLINA</small>
+                            <strong>Educação Digital</strong>
+                        </div>
+
+                        <div class="ficha-item">
+                            <small>COLÉGIO</small>
+                            <strong>Colégio Estadual Frederico Guilherme Giese</strong>
+                        </div>
+
+                        <div class="ficha-item">
+                            <small>DATA</small>
+                            <strong>12/08/2026</strong>
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <section class="final">
+
+            <div class="container final-box">
+
+                <div class="final-numero">
+                    02
+                </div>
+
+                <div>
+                    <span>FIM DA MATÉRIA</span>
+                    <h2>
+                        O próximo capítulo<br>
+                        ainda está por vir.
+                    </h2>
+                </div>
+
+                <div class="aranha-final">
+                    🕷
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="container rodape">
+
+            <div>
+                <strong>GISE NEWS</strong>
+                <span>Educação Digital • 2026</span>
+            </div>
+
+            <div class="rodape-direita">
+                <span>Janaina Senn</span>
+                <span>Colégio Estadual Frederico Guilherme Giese</span>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
