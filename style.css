@@ -1,580 +1,82 @@
-/* ================================
-   CONFIGURAÇÕES GERAIS
-================================ */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-:root {
-    --vermelho: #e50914;
-    --vermelho-escuro: #87050c;
-    --azul: #071a35;
-    --preto: #05070b;
-    --cinza: #686b72;
-    --papel: #f5f3ee;
-    --branco: #ffffff;
+body{
+    background:#ececec;
 }
 
-body {
-
-    min-height: 100vh;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    background:
-        radial-gradient(
-            circle at 10% 10%,
-            rgba(229, 9, 20, 0.35),
-            transparent 28%
-        ),
-
-        radial-gradient(
-            circle at 90% 80%,
-            rgba(15, 53, 100, 0.5),
-            transparent 32%
-        ),
-
-        linear-gradient(
-            135deg,
-            #030509,
-            #0b1628,
-            #030509
-        );
-
-    color: #111;
-
-    overflow-x: hidden;
+header{
+    background:#b30000;
+    color:white;
+    text-align:center;
+    padding:25px;
 }
 
-
-/* ================================
-   EFEITO DE TEIA NO FUNDO
-================================ */
-
-body::before {
-
-    content: "";
-
-    position: fixed;
-
-    width: 600px;
-    height: 600px;
-
-    top: -280px;
-    left: -280px;
-
-    border: 1px solid rgba(255,255,255,0.08);
-
-    border-radius: 50%;
-
-    box-shadow:
-
-        140px 0 0 -139px rgba(255,255,255,0.08),
-
-        280px 0 0 -279px rgba(255,255,255,0.08),
-
-        0 140px 0 -139px rgba(255,255,255,0.08),
-
-        0 280px 0 -279px rgba(255,255,255,0.08);
-
-    pointer-events: none;
+header h1{
+    font-size:28px;
 }
 
-
-/* ================================
-   CABEÇALHO
-================================ */
-
-.cabecalho {
-
-    width: 90%;
-
-    max-width: 1200px;
-
-    margin: auto;
-
-    padding: 25px 0;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    color: var(--branco);
+header h3{
+    margin-top:10px;
+    font-weight:normal;
 }
 
-
-/* LOGO */
-
-.logo {
-
-    font-size: 30px;
-
-    font-weight: 900;
-
-    letter-spacing: 3px;
-
-    text-shadow:
-        3px 3px 0 var(--vermelho);
+.container{
+    width:85%;
+    max-width:900px;
+    margin:40px auto;
 }
 
-.logo span {
-
-    color: var(--vermelho);
-
-    text-shadow: none;
+.noticia{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0px 0px 15px rgba(0,0,0,.2);
 }
 
-
-/* EDIÇÃO */
-
-.edicao {
-
-    text-align: right;
-
-    font-size: 10px;
-
-    line-height: 1.6;
-
-    letter-spacing: 2px;
-
-    opacity: 0.7;
+.noticia h2{
+    color:#b30000;
+    font-size:32px;
+    margin-bottom:20px;
 }
 
-
-/* ================================
-   ÁREA PRINCIPAL
-================================ */
-
-main {
-
-    width: 90%;
-
-    max-width: 1200px;
-
-    margin: auto;
-
-    padding-bottom: 60px;
+.noticia h4{
+    color:#555;
+    margin-bottom:25px;
+    font-size:20px;
 }
 
-
-/* ================================
-   CARTÃO DA NOTÍCIA
-================================ */
-
-.noticia {
-
-    background: var(--papel);
-
-    border-radius: 25px;
-
-    overflow: hidden;
-
-    box-shadow:
-        0 30px 90px rgba(0,0,0,0.55);
-
-    border: 1px solid rgba(255,255,255,0.15);
+.noticia img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:25px;
 }
 
-
-/* ================================
-   CATEGORIA
-================================ */
-
-.categoria {
-
-    width: 86%;
-
-    margin: auto;
-
-    padding-top: 32px;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 13px;
-
-    color: #777;
-
-    font-size: 10px;
-
-    font-weight: bold;
-
-    letter-spacing: 2px;
+.noticia p{
+    text-align:justify;
+    line-height:1.8;
+    font-size:18px;
 }
 
-
-.tag {
-
-    background: var(--vermelho);
-
-    color: white;
-
-    padding: 8px 13px;
-
-    border-radius: 5px;
+.informacoes{
+    margin-top:30px;
+    padding-top:20px;
+    border-top:2px solid #ddd;
 }
 
-
-.linha {
-
-    width: 45px;
-
-    height: 2px;
-
-    background: var(--vermelho);
+.informacoes p{
+    margin:8px 0;
+    font-size:18px;
 }
 
-
-/* ================================
-   TÍTULO
-================================ */
-
-h1 {
-
-    width: 86%;
-
-    margin: 22px auto 12px;
-
-    font-family: Impact, "Arial Black", sans-serif;
-
-    font-size: clamp(
-        48px,
-        7vw,
-        86px
-    );
-
-    line-height: 0.92;
-
-    text-transform: uppercase;
-
-    color: #080b12;
-
-    letter-spacing: 0.5px;
-}
-
-
-/* ================================
-   SUBTÍTULO
-================================ */
-
-h2 {
-
-    width: 86%;
-
-    max-width: 950px;
-
-    margin: auto;
-
-    margin-bottom: 30px;
-
-    color: #555b65;
-
-    font-size: clamp(
-        16px,
-        2vw,
-        21px
-    );
-
-    font-weight: normal;
-
-    line-height: 1.5;
-}
-
-
-/* ================================
-   INFORMAÇÕES
-================================ */
-
-.informacoes {
-
-    width: 86%;
-
-    margin: 0 auto 30px;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(4, 1fr);
-
-    gap: 12px;
-}
-
-
-.informacao {
-
-    background: #e9e7e1;
-
-    border-left:
-        4px solid var(--vermelho);
-
-    border-radius:
-        0 9px 9px 0;
-
-    padding: 15px;
-}
-
-
-.informacao span {
-
-    display: block;
-
-    margin-bottom: 7px;
-
-    color: #888;
-
-    font-size: 9px;
-
-    font-weight: bold;
-
-    letter-spacing: 1.5px;
-}
-
-
-.informacao strong {
-
-    display: block;
-
-    font-size: 12px;
-
-    line-height: 1.4;
-
-    color: #1b1d22;
-}
-
-
-/* ================================
-   IMAGEM PRINCIPAL
-================================ */
-
-.imagem-principal {
-
-    position: relative;
-
-    margin: 0;
-
-    background: #030303;
-}
-
-
-.imagem-principal img {
-
-    display: block;
-
-    width: 100%;
-
-    height: 630px;
-
-    object-fit: cover;
-
-    object-position: center;
-}
-
-
-/* LEVE EFEITO SOBRE A IMAGEM */
-
-.imagem-principal::after {
-
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(0,0,0,0.05),
-            transparent 50%,
-            rgba(229,9,20,0.12)
-        );
-
-    pointer-events: none;
-}
-
-
-/* LEGENDA */
-
-figcaption {
-
-    position: absolute;
-
-    right: 20px;
-
-    bottom: 18px;
-
-    z-index: 2;
-
-    background:
-        rgba(0,0,0,0.7);
-
-    color: white;
-
-    padding: 9px 12px;
-
-    border-radius: 4px;
-
-    font-size: 9px;
-
-    letter-spacing: 1px;
-
-    text-transform: uppercase;
-}
-
-
-/* ================================
-   CORPO DA NOTÍCIA
-================================ */
-
-.texto-noticia {
-
-    width: 82%;
-
-    max-width: 900px;
-
-    margin: 40px auto;
-
-    color: #30343b;
-
-    font-size: 17px;
-
-    line-height: 1.8;
-}
-
-
-.texto-noticia p {
-
-    margin-bottom: 22px;
-}
-
-
-/* PRIMEIRA LETRA */
-
-.texto-noticia p:first-child::first-letter {
-
-    float: left;
-
-    font-size: 75px;
-
-    line-height: 60px;
-
-    padding-right: 10px;
-
-    color: var(--vermelho);
-
-    font-weight: bold;
-}
-
-
-/* ================================
-   RODAPÉ
-================================ */
-
-.rodape {
-
-    width: 82%;
-
-    margin: auto;
-
-    padding:
-        20px 0 30px;
-
-    border-top:
-        1px solid #d2d0cb;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    color: #888;
-
-    font-size: 10px;
-
-    font-weight: bold;
-
-    letter-spacing: 2px;
-}
-
-
-/* ================================
-   RESPONSIVIDADE
-================================ */
-
-@media (max-width: 850px) {
-
-    .informacoes {
-
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-
-    .imagem-principal img {
-
-        height: 540px;
-    }
-}
-
-
-@media (max-width: 600px) {
-
-    .cabecalho {
-
-        flex-direction: column;
-
-        gap: 12px;
-
-        text-align: center;
-    }
-
-    .edicao {
-
-        text-align: center;
-    }
-
-
-    h1 {
-
-        font-size: 50px;
-    }
-
-
-    h2 {
-
-        font-size: 16px;
-    }
-
-
-    .informacoes {
-
-        grid-template-columns: 1fr;
-    }
-
-
-    .imagem-principal img {
-
-        height: 470px;
-    }
-
-
-    .texto-noticia {
-
-        width: 88%;
-
-        font-size: 15px;
-    }
-
-
-    .rodape {
-
-        width: 88%;
-
-        flex-direction: column;
-
-        gap: 12px;
-    }
+footer{
+    margin-top:40px;
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
