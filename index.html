@@ -13,6 +13,7 @@
 
 <body>
 
+    <!-- CABEÇALHO -->
     <header>
         <div class="topo">
 
@@ -29,6 +30,7 @@
     </header>
 
 
+    <!-- MENU -->
     <nav>
         <ul>
             <li>
@@ -46,11 +48,12 @@
     </nav>
 
 
+    <!-- CONTEÚDO PRINCIPAL -->
     <main id="inicio">
 
         <article id="noticia">
 
-            <!-- IMAGEM DA NOTÍCIA -->
+            <!-- IMAGEM PRINCIPAL -->
             <div class="imagem">
 
                 <svg
@@ -62,36 +65,59 @@
                     aria-label="Estudantes utilizando tecnologia durante uma atividade escolar"
                 >
 
-                    <!-- Fundo -->
                     <defs>
+
                         <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1">
-                            <stop offset="0%" stop-color="#0b4f8a"/>
-                            <stop offset="100%" stop-color="#16a085"/>
+                            <stop offset="0%" stop-color="#075985"/>
+                            <stop offset="100%" stop-color="#0f766e"/>
                         </linearGradient>
 
                         <linearGradient id="tela" x1="0" y1="0" x2="1" y2="1">
                             <stop offset="0%" stop-color="#ffffff"/>
-                            <stop offset="100%" stop-color="#dceeff"/>
+                            <stop offset="100%" stop-color="#dbeafe"/>
                         </linearGradient>
+
                     </defs>
 
-                    <rect width="1200" height="420" fill="url(#fundo)"/>
 
-                    <!-- Elementos decorativos -->
-                    <circle cx="1050" cy="70" r="90" fill="#ffffff" opacity="0.08"/>
-                    <circle cx="180" cy="340" r="120" fill="#ffffff" opacity="0.06"/>
-
-                    <!-- Quadro -->
+                    <!-- FUNDO -->
                     <rect
-                        x="65"
+                        width="1200"
+                        height="420"
+                        fill="url(#fundo)"
+                    />
+
+
+                    <!-- ELEMENTOS DECORATIVOS -->
+                    <circle
+                        cx="1050"
+                        cy="70"
+                        r="100"
+                        fill="#ffffff"
+                        opacity="0.08"
+                    />
+
+                    <circle
+                        cx="150"
+                        cy="350"
+                        r="130"
+                        fill="#ffffff"
+                        opacity="0.06"
+                    />
+
+
+                    <!-- QUADRO -->
+                    <rect
+                        x="55"
                         y="45"
-                        width="430"
+                        width="450"
                         height="245"
                         rx="18"
                         fill="#123b5d"
                         stroke="#ffffff"
                         stroke-width="5"
                     />
+
 
                     <text
                         x="280"
@@ -105,20 +131,22 @@
                         EDUCAÇÃO DIGITAL
                     </text>
 
+
                     <text
                         x="280"
                         y="165"
                         text-anchor="middle"
-                        fill="#8ee8ff"
+                        fill="#7dd3fc"
                         font-size="22"
                         font-family="Arial"
                     >
                         Tecnologia + Educação
                     </text>
 
+
                     <text
                         x="280"
-                        y="210"
+                        y="215"
                         text-anchor="middle"
                         fill="#ffffff"
                         font-size="18"
@@ -127,59 +155,106 @@
                         Aprender • Criar • Compartilhar
                     </text>
 
-                    <!-- Notebook -->
+
+                    <!-- NOTEBOOK -->
                     <rect
                         x="590"
-                        y="110"
+                        y="105"
                         width="330"
                         height="205"
                         rx="12"
-                        fill="#202b36"
+                        fill="#1f2937"
                     />
+
 
                     <rect
                         x="610"
-                        y="130"
+                        y="125"
                         width="290"
                         height="165"
                         rx="6"
                         fill="url(#tela)"
                     />
 
-                    <!-- Conteúdo da tela -->
-                    <rect x="635" y="155" width="160" height="18" rx="9" fill="#0b73c2"/>
-                    <rect x="635" y="190" width="220" height="12" rx="6" fill="#a9c6d9"/>
-                    <rect x="635" y="215" width="190" height="12" rx="6" fill="#a9c6d9"/>
-                    <rect x="635" y="240" width="140" height="12" rx="6" fill="#a9c6d9"/>
 
-                    <!-- Base do notebook -->
-                    <path
-                        d="M550 320 L960 320 L1000 350 L510 350 Z"
-                        fill="#18232d"
+                    <!-- ELEMENTOS DA TELA -->
+                    <rect
+                        x="635"
+                        y="150"
+                        width="160"
+                        height="18"
+                        rx="9"
+                        fill="#0284c7"
                     />
 
-                    <!-- Estudante 1 -->
-                    <circle cx="1020" cy="155" r="42" fill="#f1b98b"/>
+                    <rect
+                        x="635"
+                        y="185"
+                        width="220"
+                        height="12"
+                        rx="6"
+                        fill="#94a3b8"
+                    />
+
+                    <rect
+                        x="635"
+                        y="210"
+                        width="190"
+                        height="12"
+                        rx="6"
+                        fill="#94a3b8"
+                    />
+
+                    <rect
+                        x="635"
+                        y="235"
+                        width="145"
+                        height="12"
+                        rx="6"
+                        fill="#94a3b8"
+                    />
+
+
+                    <!-- BASE DO NOTEBOOK -->
                     <path
-                        d="M975 150 Q1020 95 1065 150"
+                        d="M550 320 L960 320 L1000 350 L510 350 Z"
+                        fill="#111827"
+                    />
+
+
+                    <!-- ESTUDANTE 1 -->
+                    <circle
+                        cx="1030"
+                        cy="155"
+                        r="42"
+                        fill="#f1b98b"
+                    />
+
+                    <path
+                        d="M985 150 Q1030 95 1075 150"
                         fill="#35251f"
                     />
 
                     <path
-                        d="M960 220 Q1020 180 1080 220 L1100 350 L940 350 Z"
-                        fill="#e74c3c"
+                        d="M970 220 Q1030 180 1090 220 L1105 350 L945 350 Z"
+                        fill="#ef4444"
                     />
 
-                    <!-- Braços -->
                     <path
-                        d="M975 245 L900 285"
+                        d="M980 245 L900 285"
                         stroke="#f1b98b"
                         stroke-width="25"
                         stroke-linecap="round"
                     />
 
-                    <!-- Estudante 2 -->
-                    <circle cx="430" cy="300" r="38" fill="#d99a70"/>
+
+                    <!-- ESTUDANTE 2 -->
+                    <circle
+                        cx="430"
+                        cy="300"
+                        r="38"
+                        fill="#d99a70"
+                    />
 
                     <path
                         d="M390 295 Q430 245 470 295"
@@ -188,10 +263,11 @@
 
                     <path
                         d="M380 350 Q430 315 480 350 L490 420 L370 420 Z"
-                        fill="#f1c40f"
+                        fill="#facc15"
                     />
 
-                    <!-- Tablet -->
+
+                    <!-- TABLET -->
                     <rect
                         x="410"
                         y="320"
@@ -212,10 +288,18 @@
                         transform="rotate(-8 420 330)"
                     />
 
-                    <!-- Ícones -->
-                    <circle cx="110" cy="370" r="22" fill="#ffffff" opacity="0.9"/>
+
+                    <!-- ÍCONES -->
+                    <circle
+                        cx="105"
+                        cy="370"
+                        r="23"
+                        fill="#ffffff"
+                        opacity="0.9"
+                    />
+
                     <text
-                        x="110"
+                        x="105"
                         y="378"
                         text-anchor="middle"
                         font-size="25"
@@ -223,7 +307,15 @@
                         💡
                     </text>
 
-                    <circle cx="1100" cy="370" r="22" fill="#ffffff" opacity="0.9"/>
+
+                    <circle
+                        cx="1100"
+                        cy="370"
+                        r="23"
+                        fill="#ffffff"
+                        opacity="0.9"
+                    />
+
                     <text
                         x="1100"
                         y="378"
@@ -237,12 +329,15 @@
 
             </div>
 
+
+            <!-- LEGENDA -->
             <p class="legenda">
-                Tecnologia e educação podem caminhar juntas
-                para tornar a aprendizagem mais dinâmica.
+                Estudantes utilizam recursos tecnológicos como
+                ferramentas para ampliar as possibilidades de aprendizagem.
             </p>
 
 
+            <!-- CONTEÚDO DA NOTÍCIA -->
             <div class="conteudo">
 
                 <span class="categoria">
@@ -250,27 +345,22 @@
                 </span>
 
 
+                <!-- TÍTULO -->
                 <h1>
-                    A tecnologia como aliada
-                    na educação e na aprendizagem
+                    Tecnologia transforma a sala de aula e abre
+                    novos caminhos para a aprendizagem
                 </h1>
 
 
+                <!-- SUBTÍTULO -->
                 <p class="subtitulo">
-                    A tecnologia vem transformando a educação e criando
-                    novas possibilidades para o aprendizado. Com o uso de
-                    computadores, celulares, plataformas digitais e
-                    ferramentas interativas, os estudantes podem pesquisar,
-                    criar, compartilhar informações e desenvolver novas
-                    habilidades. No ambiente escolar, esses recursos podem
-                    tornar as aulas mais dinâmicas e aproximar os conteúdos
-                    da realidade dos alunos. Entretanto, é importante utilizar
-                    a tecnologia de forma responsável, segura e consciente,
-                    desenvolvendo também o pensamento crítico e a capacidade
-                    de avaliar as informações encontradas na internet.
+                    Ferramentas digitais tornam as aulas mais interativas,
+                    estimulam a criatividade e ajudam estudantes a desenvolver
+                    novas habilidades para o mundo atual.
                 </p>
 
 
+                <!-- INFORMAÇÕES -->
                 <div class="info">
 
                     <strong>Autora:</strong>
@@ -284,11 +374,12 @@
                     <span>|</span>
 
                     <strong>Disciplina:</strong>
-                    Ed. Digital
+                    Educação Digital
 
                 </div>
 
 
+                <!-- TEXTO DA NOTÍCIA -->
                 <div class="texto">
 
                     <p>
@@ -297,25 +388,21 @@
                         importante dentro das escolas. Computadores,
                         celulares, tablets, plataformas educacionais e outros
                         recursos digitais podem contribuir para transformar
-                        a maneira como os estudantes aprendem. Quando
-                        utilizados de forma responsável e planejada, esses
-                        recursos tornam as aulas mais dinâmicas, interativas
-                        e próximas da realidade dos alunos.
+                        a maneira como os estudantes aprendem.
                     </p>
 
 
                     <p>
-                        A educação digital não consiste apenas em utilizar
-                        aparelhos eletrônicos durante as aulas. Ela também
-                        envolve aprender a pesquisar, selecionar, analisar e
-                        compartilhar informações de maneira consciente. Com
-                        a grande quantidade de conteúdos disponíveis na
-                        internet, é fundamental que os estudantes desenvolvam
-                        um olhar crítico para identificar informações
-                        confiáveis e evitar a propagação de notícias falsas.
+                        Quando utilizados de forma responsável e planejada,
+                        esses recursos tornam as aulas mais dinâmicas,
+                        interativas e próximas da realidade dos alunos.
+                        Vídeos educativos, pesquisas, apresentações,
+                        jogos e plataformas digitais são alguns exemplos
+                        de ferramentas que podem complementar o ensino.
                     </p>
 
 
+                    <!-- DESTAQUE -->
                     <div class="destaque">
                         “A educação digital não significa apenas utilizar
                         tecnologia, mas aprender a utilizá-la de maneira
@@ -324,50 +411,65 @@
 
 
                     <p>
+                        A educação digital não consiste apenas em utilizar
+                        aparelhos eletrônicos durante as aulas. Ela também
+                        envolve aprender a pesquisar, selecionar, analisar
+                        e compartilhar informações de maneira consciente.
+                    </p>
+
+
+                    <p>
+                        Com a grande quantidade de conteúdos disponíveis
+                        na internet, é fundamental que os estudantes
+                        desenvolvam um olhar crítico para identificar
+                        informações confiáveis e evitar a propagação de
+                        notícias falsas.
+                    </p>
+
+
+                    <p>
                         Dentro da escola, diferentes ferramentas podem ser
                         utilizadas para complementar o aprendizado. Vídeos
                         educativos, apresentações, pesquisas, jogos,
-                        simuladores e plataformas de atividades são alguns
-                        exemplos de recursos que podem ajudar os alunos a
-                        compreender melhor determinados conteúdos. Além
-                        disso, a tecnologia permite que o estudante tenha
-                        contato com diferentes fontes de conhecimento e possa
-                        pesquisar assuntos que despertam sua curiosidade.
+                        simuladores e plataformas de atividades podem ajudar
+                        os alunos a compreender melhor determinados conteúdos.
                     </p>
 
 
                     <p>
-                        Outro ponto importante é que os recursos digitais
-                        podem estimular a criatividade. Ao produzir uma
-                        apresentação, editar um vídeo, criar uma página na
-                        internet ou desenvolver um trabalho utilizando
-                        ferramentas digitais, o aluno deixa de ser apenas
-                        um consumidor de informações e passa a produzir
-                        seu próprio conteúdo. Esse processo pode contribuir
-                        para o desenvolvimento da autonomia, da comunicação
-                        e da capacidade de resolver problemas.
+                        A tecnologia também pode estimular a criatividade.
+                        Ao produzir uma apresentação, editar um vídeo,
+                        criar uma página na internet ou desenvolver um
+                        trabalho utilizando ferramentas digitais, o aluno
+                        deixa de ser apenas consumidor de informações e
+                        passa a produzir seu próprio conteúdo.
                     </p>
 
 
                     <p>
-                        A tecnologia também pode favorecer a colaboração entre
-                        os estudantes. Trabalhos realizados em grupo podem
-                        utilizar documentos compartilhados, plataformas de
-                        comunicação e outras ferramentas que permitem que
-                        várias pessoas participem de uma mesma atividade.
-                        Dessa maneira, os alunos aprendem a dividir tarefas,
-                        trocar ideias, respeitar opiniões diferentes e
-                        trabalhar juntos para alcançar um objetivo.
+                        Outro benefício é a possibilidade de colaboração.
+                        Trabalhos realizados em grupo podem utilizar
+                        documentos compartilhados e plataformas digitais,
+                        permitindo que os estudantes troquem ideias,
+                        dividam tarefas e trabalhem juntos.
                     </p>
 
 
                     <p>
-                        Porém, é importante lembrar que a tecnologia deve ser
-                        utilizada com equilíbrio. O uso excessivo ou inadequado
-                        pode gerar distrações e prejudicar o rendimento escolar.
-                        Por isso, encontrar o ponto correto entre o mundo digital
-                        e as interações presenciais é fundamental para garantir
-                        uma formação completa e saudável para todos.
+                        Porém, é importante lembrar que a tecnologia deve
+                        ser utilizada com equilíbrio. O uso excessivo ou
+                        inadequado pode gerar distrações e prejudicar o
+                        rendimento escolar.
+                    </p>
+
+
+                    <p>
+                        Por isso, encontrar um equilíbrio entre o mundo
+                        digital e as interações presenciais é fundamental.
+                        Quando utilizada de maneira consciente, a tecnologia
+                        pode ser uma importante aliada da educação e contribuir
+                        para preparar os estudantes para os desafios do
+                        mundo atual.
                     </p>
 
                 </div>
@@ -377,25 +479,40 @@
         </article>
 
 
+        <!-- SOBRE O PROJETO -->
         <section id="sobre">
-            <h2>Sobre o Projeto</h2>
+
+            <h2>
+                Sobre o Projeto
+            </h2>
 
             <p>
-                O <strong>Giese Notícias</strong> é um projeto desenvolvido pelos
-                estudantes do Colégio Estadual Frederico Guilherme Giese no âmbito
-                da disciplina de Educação Digital, buscando integrar conceitos de
-                tecnologia, cidadania digital e comunicação.
+                O <strong>Giese Notícias</strong> é um projeto desenvolvido
+                pelos estudantes do Colégio Estadual Frederico Guilherme
+                Giese no âmbito da disciplina de Educação Digital.
             </p>
+
+            <p>
+                O projeto busca integrar tecnologia, cidadania digital
+                e comunicação, incentivando os estudantes a pesquisar,
+                produzir conteúdos e compartilhar informações de maneira
+                responsável.
+            </p>
+
         </section>
 
     </main>
 
 
+    <!-- RODAPÉ -->
     <footer>
+
         <p>
-            &copy; 2026 Giese Notícias - Colégio Estadual Frederico Guilherme Giese.
+            &copy; 2026 Giese Notícias -
+            Colégio Estadual Frederico Guilherme Giese.
             Todos os direitos reservados.
         </p>
+
     </footer>
 
 </body>
